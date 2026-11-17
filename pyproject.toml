@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "runwx"
+version = "0.1.0"
+description = "When to go for a run, from National Weather Service forecasts"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+runwx = "runwx.cli:main"
+
+[tool.setuptools]
+packages = ["runwx"]
